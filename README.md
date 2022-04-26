@@ -1,14 +1,20 @@
-# Eggplant Runner Jenkins Plugin (ALPHA VERSION)
+<img src="https://www.eggplantsoftware.com/hubfs/Branding/Keysight-Eggplant-Logo_RGB_full-color.svg" width="300px"/>
 
-# THIS IS STILL IN TEST, WAIT FOR OFFICIAL RELEASE
+# Eggplant DAI Plugin for Jenkins
 
 ## Introduction
 
-Eggplant Runner is a Jenkins plugin that runs DAI Test Config .
+The [Eggplant DAI](https://www.eggplantsoftware.com/digital-automation-intelligence) Plugin for Jenkins launches DAI tests from within a Jenkins pipeline.  You can use it to continuously test your application using Eggplant's [model-based approach to testing](https://docs.eggplantsoftware.com/docs/dai-using-eggplant-dai/).  For more information about Eggplant, visit https://www.eggplantsoftware.com.
 
-## Getting started
+_This introduction should include a screenshot of a Jenkins pipline triggering a DAI run_.
 
-The plugin can be used by executing it as follows in your Jenkinsfile:
+## Installing and using the Eggplant DAI Plugin for Jenkins
+
+_This section should contain a visual overview of how to enable the Eggplant plugin in Jenkins, with screenshots_
+
+## Advanced Usage
+
+The plugin can be used by executing it as follows in your `Jenkinsfile`:
 
 ```yaml
 pipeline {
@@ -28,17 +34,15 @@ pipeline {
 }
 ```
 
-It can also be configured as a Build Step using the Jenkins GUI.
+## License
 
-## LICENSE
+This plug-in is licensed under the terms of the [MIT license](LICENSE.md)
 
-Licensed under MIT, see [LICENSE](LICENSE.md)
+## Contributing
 
-## MANTAINER
+You need to install the following dependencies if you want to contribute to the Eggplant DAI Runner for Jenkins:
 
-For development, we need to installe the below.
-
-1. You can download and install Java 11 from the Eclipse Temurin website (https://adoptium.net/).
-2. Download Maven from Apache Maven website (https://maven.apache.org/). Make sure to download one of the binary archives (with bin in their name).
-3. To verify that Maven is installed, run the following command: mvn -version
-4. You an use launch.json to run 'Debug (Attach)' to launch an local Jenkins instance for development.
+1. You can download and install Java 11 from the [Eclipse Temurin website](https://adoptium.net/).
+2. Download Maven from the [Apache Maven website](https://maven.apache.org/). Make sure to download one of the binary archives (with bin in their name).
+3. To verify that Maven is installed, run the following command: `mvn -version`
+4. You can use `launch.json` to run 'Debug (Attach)' to launch an local Jenkins instance for development.
